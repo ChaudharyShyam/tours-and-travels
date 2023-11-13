@@ -31,3 +31,5 @@ mysql for the database
 Tools:
 vs code
 xampp server
+
+# Launching soon
