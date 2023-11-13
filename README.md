@@ -20,16 +20,16 @@ provide tourists a variety of
 # Technologies Used
 
 Frontend:
-html 
-css
+html , 
+css,
 javascript
 
 Backend:
-php
+php , 
 mysql for the database
 
 Tools:
-vs code
+vs code ,
 xampp server
 
 # Launching soon !
