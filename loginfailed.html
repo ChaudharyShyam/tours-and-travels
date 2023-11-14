@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="frame">
+  <div class="modal">
+    <img src="http://100dayscss.com/codepen/alert.png" width="44" height="38" />
+		<span class="title">ops !</span>
+		<p>your username or password is incorrect</p>
+		<form action="index.php" method="post">
+			<a href="index.php" class="button" style="text-decoration: none;" >Back to Login</a>
+	    </form>
+  </div>
+</div>
+</body>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+	overflow: hidden;
+  background:transparent;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.modal {
+  position: absolute;
+	width: 280px;
+	height: 210px;
+  top: 95px;
+  left: 60px;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 4px 8px 12px 0 rgba(0,0,0,0.4);
+	text-align: center;
+	overflow: hidden;
+	animation: show-modal .7s ease-in-out;
+	
+}
+	
+	img {
+		margin-top: 24px;
+	}
+	
+	.title {
+		display: block;
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 400;
+		margin: 14px 0 5px 0;
+	}
+	
+	p {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 19px;
+		margin: 0;
+		padding: 0 30px;
+	}
+	
+	.button {
+		position: absolute;
+		height: 40px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #F65656;
+		color: #fff;
+		line-height: 40px;
+		font-size: 14px;
+		font-weight: 400;
+		cursor: pointer;
+		
+		
+	}
+	
+
+
+@keyframes show-modal {
+	0% {
+		transform: scale(0);
+	}
+	60% {
+		transform: scale(1.1);
+	}
+	80% {
+		transform: scale(.95);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes hide-modal {
+	0% {
+		transform: scale(1);
+	}
+	20% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.button').click(function() {
+        $('.modal').addClass('hide');
+    });
+});
+</script>
+</html>

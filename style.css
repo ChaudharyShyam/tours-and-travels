@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body,
+html {
+  background-color:white;
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------Scroll Bar----------s-------------*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(221, 36, 36);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#999;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color:#999;
+}
+
+/*========================Nav Bar=========================*/
+.nav-bar {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 90px;
+  background-color:yellow;
+  box-shadow: 3px 3px 10px lightslategray;
+  align-items: center;
+  border-bottom-left-radius:30px ;
+  border-bottom-right-radius: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  flex: 1;
+  font-size: 40px;
+  padding: 20px;
+  margin-left: 50px;
+  font-family: Satisfy;
+}
+
+ul.menu {
+  margin-right: 20px;
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.menu li {
+  flex: 1;
+  list-style-type: none;
+  font-size: 16px;
+  font-family: "Barlow Condensed";
+  text-align: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.menu li a:hover {
+  color: midnightblue;
+  text-decoration: underline;
+}
+
+.btnLogin-popup {
+  width: 110px;
+  height: 42px;
+  background: black;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: black;
+  background-color:transparent;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: transform 0.2s;
+}
+.btnLogin-popup:hover {
+  transform: scale(1.06);
+  background-color: #ded714; /* Increase size by 10% on hover */
+}
+/*=============================Banner=============================*/
+.slider {
+
+  /*overflow: hidden;*/
+  width: 100%;
+  height: 98vh;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+}
+
+
+
+
+.slider-container {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 21.5%;
+  
+}
+
+/*.slider {
+  width: 100%;
+  height: 100%
+}*/
+
+.slider-image {
+  width: 38.1cm;
+  height: 15.1cm;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slider-image.active {
+  opacity: 1;
+}
+@keyframes slides {
+  0% {
+      transform: translateX(0);
+  }
+  20% {
+      transform: translateX(-100%);
+  }
+  40% {
+      transform: translateX(-200%);
+  }
+  60% {
+      transform: translateX(-300%);
+  }
+  80% {
+      transform: translateX(-400%);
+  }
+  100% {
+      transform: translateX(-500%);
+  }
+}
+
+
+/*===========================Services===========================*/
+.services {
+  top: 0%;
+  margin-top:-24%;
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+
+ 
+}
+
+.service-item {
+  flex: 1;
+  padding: 10px 10px;
+  border: lightcyan solid 1px;
+  text-align: center;
+  margin: 180px 50px;
+  transition: all 1s;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-item:hover {
+  box-shadow: 3px 3px 20px lightsteelblue;
+}
+
+.service-item h2 {
+  font-family: Barlow Condensed;
+  font-size: 18px;
+  width: 120px;
+  color: #001f38;
+  flex: 1;
+}
+
+.service-item img {
+  width: 60px;
+  height: 60px;
+  flex: 1;
+}
+
+/*=============================Places===============================*/
+.discover__container {
+  margin: 60px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discover__img-1 {
+  background: no-repeat center / cover url(https://i.pinimg.com/564x/d6/62/c1/d662c1c1725a7d182c1712d9f1ee106c.jpg);
+}
+
+.discover__img-2 {
+  background: no-repeat center / cover url(https://i.pinimg.com/564x/ac/e5/ed/ace5ed785beb820ccbf5f202bf5bf3f7.jpg);
+}
+
+.discover__item {
+  flex: 1;
+  height: 248px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.discover__item p {
+  font-size: 13px;
+  color: #fff;
+}
+
+.discover__item h4 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.discover__item a {
+  text-decoration: none;
+  padding: 8px 36px 6px;
+  background-color: #fff;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.discover__btn-1 {
+  color: #f3a46b;
+}
+
+.discover__btn-2 {
+  color: #1bbc9b;
+}
+
+/*=========================About Us=========================*/
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 150px;
+}
+
+.about-img {
+  flex: 1;
+}
+
+.about-img img {
+  width: 500px;
+  height: 700px;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+  flex: 1;
+  /*width: 100px;*/
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.about-text small,
+.about-text p,
+.about-text input,
+.about-text a {
+  flex: 1;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.about-text small {
+  color:red;
+  font-size: 18px;
+}
+
+.about-text h2 {
+  flex: 1;
+  font-family: Barlow Condensed;
+  font-size: 60px;
+  color: #191d34;
+  width: 450px;
+}
+
+.about-text label {
+  padding-bottom: 10px;
+  color: #506172;
+  font-weight: bolder;
+  font-family: Roboto;
+  letter-spacing: 1px;
+}
+
+.about-text p {
+  width: 500px;
+  line-height: 30px;
+  color: #506172;
+  font-weight: bolder;
+  padding: 50px 0;
+}
+
+.about-text a {
+  background-color: #fff;
+  border: 2px solid #014b85;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 180px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  color: #014b85;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.about-text a:hover {
+  background-color: #014b85;
+  color: #fff;
+}
+
+/*===============Footer===================*/
+.footer {
+  background-image: url("https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293781/pine-tree_mq2sgp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 670px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 36, 0.8);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.footer .links {
+  position: relative;
+  color: #fff;
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links ul {
+  list-style-type: none;
+}
+
+.links h3 {
+  font-family: Barlow Condensed;
+  font-weight: normal;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.links li {
+  font-family: Roboto;
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+.links li:hover {
+  color: red;
+}
+
+/*==========================Responsive=============================*/
+
+
+
+/*=====================*/
+
+.form-popup {
+  width: 10.5cm;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  /*box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);*/
+  border: 2px solid red;
+  z-index: 1000;
+  margin-top: 5%;
+}
+
+.form-container {
+  text-align: center;
+  height: fit-content;
+}
+
+.form-container h2 {
+  color:black;
+}
+
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  padding-left: 3px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container .submit-button {
+  background-color:red;
+  color:black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container .submit-button:hover {
+  background-color:red;
+}
+
+.form-container .close-button {
+  background-color: #ccc;
+  color:black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container .close-button:hover {
+  background-color: light rgb(237, 223, 223);
+}
+
+
+.form-container input:invalid {
+  border-color:red;
+}
+
+.form-container .registerButton {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.form-container .registerButton:hover {
+  text-decoration: underline;
+}
+
+.form-container .showPasswordButton{
+    margin-left: 72%;    
+    border: none;
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+    top: 0%;
+    cursor: pointer;
+}
+
+.register {
+  background-color: transparent;
+  border: none;
+  color:blue;
+  cursor: pointer;
+}
+
+/*===== preloader======*/
+
+#preloader{
+  background: #000 url(image/loader.gif) no-repeat center center;
+  background-size: 100%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  
+
+}
