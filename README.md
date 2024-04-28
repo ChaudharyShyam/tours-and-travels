@@ -1,4 +1,5 @@
-![image](https://github.com/ChaudharyShyam/tours-and-travels/assets/150513922/74213850-422f-4edc-9cdf-4b5ca5dff5c8)
+![Tours and travels](https://github.com/ChaudharyShyam/tours-and-travels/assets/150513922/75e9b0c8-f545-4b9b-9fc2-f438d5ec4587)
+
 
 
 # tours-and-travels
